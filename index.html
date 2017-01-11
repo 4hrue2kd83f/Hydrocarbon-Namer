@@ -1,0 +1,38 @@
+
+<head>
+     <!--
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>-->
+    <script language="javascript" src="lib/p5.js"></script>
+    <script language="javascript" src="lib/addons/p5.dom.js"></script>
+    <!--<script language="javascript" src="lib/addons/p5.sound.js"></script>-->
+    <script language="javascript" src="sketch.js"></script>
+    <script language="javascript" src="render.js"></script>
+    <script language="javascript" src="controller.js"></script>
+    <script language="javascript" src="distance.js"></script>
+    <script language="javascript" src="molecule.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div id="title">Chem App</div>
+    <div id="name">&nbsp;</div>
+    <div id="canvas_container"></div>
+        <select id="presets" onchange="selectPresets(this.selectedIndex)">
+            <option value="0">Choose Preset</option>
+            <option value="1">Methane</option>
+            <option value="2">Ethane</option>
+            <option value="3">Propane</option>
+            <option value="4">Butane</option>
+            <option value="5">Pentane</option>
+            <option value="6">Hexane</option>
+            <option value="7">Heptane</option>
+        </select>
+    <select id="atomTypes" onchange="setAtomType(this.selectedIndex)">
+            <option value="C">C</option>
+            <option value="O">O</option>
+        </select>
+</body>
