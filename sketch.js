@@ -1,6 +1,6 @@
 //begin
 var w = window.innerWidth,
-    h = window.innerHeight/2;
+    h = window.innerHeight*3/4;
  
 var molecules = [],
     bonds = [],
@@ -82,7 +82,7 @@ var carboxylicSuffix = {
 var alcoholSuffix = 'ol';
 function setup() 
 {
-    console.log('Setup')
+    console.log('Setup');
     
     var canvas = createCanvas(w, h);
     canvas.parent('canvas_container');
